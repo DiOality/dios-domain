@@ -1,0 +1,12 @@
+#scroller {
+    margin: 0;
+    background-color: #4c37586e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#gameCanvas {
+    background-color: bisque;
+}
