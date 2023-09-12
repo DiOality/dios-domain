@@ -5,6 +5,9 @@ Fonts
 */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron:wght@500&family=Playfair+Display:wght@500&display=swap');
+
 /*
 =============== 
 Variables
@@ -74,6 +77,8 @@ body {
     color: var(--clr-grey-1);
     line-height: 1.5;
     font-size: 0.875rem;
+    /* wont load a scrollbar, keeps the page on 1 dimension */
+    overflow: hidden;
 }
 
 ul {
@@ -96,7 +101,8 @@ img {
     display: block;
 }
 
-h1,
+
+
 h2,
 h3,
 h4 {
@@ -105,10 +111,13 @@ h4 {
     line-height: 1.25;
     margin-bottom: 0.75rem;
     font-family: var(--ff-primary);
+    color: #120a57;
+
 }
 
 h1 {
     font-size: 3rem;
+
 }
 
 h2 {
@@ -124,13 +133,30 @@ h4 {
 }
 
 p {
-    margin-bottom: 0.5rem;
-    color: var(--clr-grey-5);
+    margin-bottom: 0.2rem;
+    color: #120a57;
+}
+
+p::first-letter {
+    background-color: #F2B1CF;
+    font-size: xx-large;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+
+i {
+    font-size: 150px;
 }
 
 .myStory {
     margin-bottom: 0.5rem;
-    color: var(--clr-grey-5);
+    color: #120a57;
     text-align: justify;
 }
 
@@ -178,6 +204,7 @@ p {
     cursor: pointer;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     border-radius: var(--radius);
+
 }
 
 .btn:hover {
@@ -187,7 +214,7 @@ p {
 
 /* section */
 .section {
-    padding: 5rem 0;
+    padding: 2rem 0;
 }
 
 .section-center {
@@ -215,12 +242,25 @@ About
 */
 .title {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
+    font-family: 'Orbitron', sans-serif;
+
+    animation: fadeIn;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 4s;
+    /* don't forget to set a duration! */
 }
 
 .title p {
     width: 80%;
     margin: 0 auto;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-family: 'Playfair Display', serif;
+
 }
 
 .about-img {
@@ -245,6 +285,7 @@ About
     }
 }
 
+/* Inside tab information */
 .about {
     background: var(--clr-white);
     border-radius: var(--radius);
@@ -277,6 +318,9 @@ About
     cursor: pointer;
     transition: var(--transition);
     letter-spacing: var(--spacing);
+    font-weight: 500;
+    font-family: 'Orbitron', sans-serif;
+    /* font-family: 'Playfair Display', serif; */
 }
 
 .tab-btn:hover:not(.active) {
@@ -288,6 +332,7 @@ About
     border-bottom-left-radius: var(--radius);
     border-bottom-right-radius: var(--radius);
     padding: 2rem 1.5rem;
+    background-color: #071386;
 }
 
 /* hide content */
@@ -301,4 +346,35 @@ About
 
 .content.active {
     display: block;
+}
+
+/* Tabs */
+#firstTab {
+    border: solid #4c37586e 0.5px;
+    box-shadow: 10px 10px #bfe2d9;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: #120a57
+}
+
+#secondTab {
+    border: solid #4c37586e 0.5px;
+    box-shadow: 10px 10px #bfe2d9;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: #120a57
+}
+
+#thirdTab {
+    border: solid #4c37586e 0.5px;
+    box-shadow: 10px 10px #bfe2d9;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: #120a57
 }
