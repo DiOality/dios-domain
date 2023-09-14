@@ -141,7 +141,8 @@ p::first-letter {
     color: #F2B1CF;
     font-size: xx-large;
     font-family: 'Orbitron', sans-serif;
-
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 .flex {
@@ -158,10 +159,6 @@ i {
     font-size: 100px;
     margin-left: 30%;
     margin-top: 10%;
-}
-
-#thirdTab i {
-    font-size: 50px;
 }
 
 .myStory {
@@ -344,6 +341,7 @@ About
     border-bottom-right-radius: var(--radius);
     padding: 1rem 1.5rem;
     background-color: #071386;
+    /* #2B4162 | #293241 | #758BFD | #377771 | #5D5F71 | */
 }
 
 /* hide content */
@@ -393,7 +391,7 @@ About
     padding: 10px;
     padding-top: 0%;
     cursor: pointer;
-    background-color: whitesmoke;
+    background-color: #F2B1CF;
     color: #120a57
 }
 
@@ -411,11 +409,28 @@ About
 #thirdTab i {
     padding: 1%;
     margin: 0%;
-    color: #F2B1CF
+    color: #2B4162;
+    font-size: 40px;
 }
 
 #thirdTab p {
     display: inline;
+}
+
+#thirdTab .pad {
+    font-size: 20px;
+    color: #758BFD;
+    padding: 1%;
+    padding-right: 5%;
+    margin: 0;
+    transition: font-size 4s color 1s;
+}
+
+#thirdTab .pad:hover {
+    font-size: 30px;
+    color: black;
+    padding: 1%;
+    margin: 0;
 }
 
 /* FLIP CARD SECTION */
