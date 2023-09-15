@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./projectTab.css">
+    <link rel="stylesheet" href="./hunterJumper.css">
+    <link rel="stylesheet" href="./hunterquotes.css">
+    <link rel="stylesheet" href="./hunterScroller.css">
+    <!-- <script defer src="./hunterScroller.js" type="module"></script> -->
+    <script src="https://kit.fontawesome.com/0ceac8fa1a.js" crossorigin="anonymous"></script>
+    <script defer src="./hunterTabs.js"></script>
+    <script defer src="./Quotes/hunterquotes.js"></script>
+    <!-- <script defer src="./JumpingGame/hunterJumper.js"></script> -->
+    <title>Hunter Tabs</title>
+</head>
+<body>
+    <section class="section">
+        <div class="title" >
+            <h2 class="title">Welcome to Dio's Domain</h2>
+            <p class="intro">
+                Hello, my name is Nathan Davies Parkes and this is a look into my beginnings...
+            </p>
+        </div>
+        <div class="about-center section-center">
+            <article class="about-img">
+                <img id="hisoka" src="./Images/killuaShadow.jpg" alt="killuaShadow">
+            </article>
+        <article class="about">
+                <!-- btn container -->
+                <div class="btn-container">
+                    <button class="tab-btn active" data-id="aboutMe">My story
+
+                    </button>
+                    <button class="tab-btn" data-id="mySkills">My Skills
+
+                    </button>
+                    <button class="tab-btn" data-id="myProjects">My Projects
+
+                    </button>                   
+                </div>
+            <article class="about-content">
+                <!-- single item -->
+                <div class="content active" id="aboutMe">
+                    <!-- <section class="dataOutput"></section> -->
+                    <section id="firstTab">
+                        <!-- <a href="../hunterHome/index.html" target= '_blank'>Click me for the Low down of my Story</a> -->
+                        <p class="myStory">My journey as a developer began in 2021 when I enrolled on CodeCademy's Full Stack Engineer Course. In 2022 I reached out to a organisation called GlowFinger, where I was accepted as an intern and commenced in my largest trail yet, Business Transfiguration. I learnt many new skills an dmy understanding in the concept of programming grew, I had now taken on tools such as Svelte, Tailwind CSS, Docker and more. </p>
+                        <!-- <img src="./Images/gon-killua.jpg" alt="gon-killua"> -->
+                    </section>
+                </div>
+                <!-- end of single item -->
+                <!-- single item -->
+                <div class="content" id="mySkills">
+                    <section id="secondTab" >
+                          <p>Information on the skills and technologies I utilise</p>
+
+                        <br>
+                        <div class="flex">
+
+                        <i class="fa-brands fa-square-js  fa-10px" style="color: #bfe2d9;"></i>
+                        <br>
+                        <i class="fa-brands fa-python  fa-10px" style="color: #bfe2d9;"></i>
+                        <br>
+                        <i class="fa-brands fa-html5  fa-10px" style="color: #bfe2d9;"></i>
+                        <br>
+                        <i class="fa-brands fa-css3-alt  fa-10px" style="color: #bfe2d9;"></i>
+                        <br>
+                        <i class="fa-brands fa-square-git  fa-10px" style="color: #bfe2d9;"></i>
+                    </div>
+                        <!-- <img src="./Images/killuaShadow.jpg" alt="killuaShadow"> -->
+                    </section>
+                </div>
+                  <!-- end of single item -->
+                  <!-- single item -->
+                <div class="content" id="myProjects">
+                    <section id="thirdTab">
+                        <a href="./JumpingGame/hunterJumper.html" target="-blank">Click me for the Jumping Game</a>
+                        <br>
+                        <a href="./SideScroller/hunterScroller.html" target= '_blank'>Click me for the SideScroller Game Where it Started</a>
+                        <br>
+                        <a href="https://ashy-mushroom-02b6fdb03.3.azurestaticapps.net" target= '_blank'>Click me for the SideScroller Game Currently</a>
+                        <iframe src="https://replit.com/@NateD8/Full-Film-App?embed=true" frameborder="0" height="300px" width="500px">Film App</iframe>
+                    </section>
+
+                </div>
+                <!-- end of single item -->
+            </article>
+        </article>
+
+        </div>
+    </section>
+</body>
+</html>

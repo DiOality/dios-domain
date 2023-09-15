@@ -78,7 +78,7 @@ body {
     line-height: 1.5;
     font-size: 0.875rem;
     /* wont load a scrollbar, keeps the page on 1 dimension */
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 ul {
@@ -88,7 +88,7 @@ ul {
 a {
     text-decoration: underline;
     font-family: var(--ff-secondary);
-    color: #120a57;
+    color: var(--clr-grey-5);
     line-height: 1.5;
     font-size: 0.875rem;
 }
@@ -138,27 +138,20 @@ p {
 }
 
 p::first-letter {
-    color: #F2B1CF;
+    background-color: #F2B1CF;
     font-size: xx-large;
     font-family: 'Orbitron', sans-serif;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 
 }
 
 .flex {
     display: flex;
     justify-content: space-evenly;
-    /* when it doesnt fit in the row, it will create a new row */
-    flex-wrap: wrap;
-    margin-top: 2%;
-    background-color: #F2B1CF;
-    border-radius: 10px;
+    margin-top: 5%;
 }
 
 i {
-    font-size: 100px;
-    margin-left: 30%;
-    margin-top: 10%;
+    font-size: 150px;
 }
 
 .myStory {
@@ -249,8 +242,8 @@ About
 */
 .title {
     text-align: center;
-    margin-bottom: 2rem;
-    font-family: 'Playfair Display', serif;
+    margin-bottom: 3rem;
+    font-family: 'Orbitron', sans-serif;
 
     animation: fadeIn;
     /* referring directly to the animation's @keyframe declaration */
@@ -265,8 +258,9 @@ About
 
 .intro {
     text-align: center;
-    margin-bottom: 2rem;
-    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 4rem;
+    font-family: 'Playfair Display', serif;
+
 }
 
 .about-img {
@@ -326,8 +320,6 @@ About
     letter-spacing: var(--spacing);
     font-weight: 500;
     font-family: 'Orbitron', sans-serif;
-    border: #F2B1CF 2px solid;
-    /* text-shadow: 10px 10px #bfe2d9; */
     /* font-family: 'Playfair Display', serif; */
 }
 
@@ -339,9 +331,8 @@ About
 .about-content {
     border-bottom-left-radius: var(--radius);
     border-bottom-right-radius: var(--radius);
-    padding: 1rem 1.5rem;
+    padding: 2rem 1.5rem;
     background-color: #071386;
-    /* #2B4162 | #293241 | #758BFD | #377771 | #5D5F71 | */
 }
 
 /* hide content */
@@ -368,34 +359,16 @@ About
     color: #120a57
 }
 
-#firstTab i {
-    font-size: 20px;
-    color: #F2B1CF;
-    padding: 1%;
-    margin: 0;
-
-    transition: font-size 1s color 1s;
-}
-
-#firstTab i:hover {
-    font-size: 30px;
-    color: black;
-    padding: 1%;
-    margin: 0;
-}
-
 #secondTab {
     border: solid #4c37586e 0.5px;
     box-shadow: 10px 10px #bfe2d9;
     border-radius: 10px;
     padding: 10px;
-    padding-top: 0%;
     cursor: pointer;
-    background-color: #F2B1CF;
+    background-color: whitesmoke;
     color: #120a57
 }
 
-/* Third Tab section */
 #thirdTab {
     border: solid #4c37586e 0.5px;
     box-shadow: 10px 10px #bfe2d9;
@@ -403,131 +376,5 @@ About
     padding: 10px;
     cursor: pointer;
     background-color: whitesmoke;
-    color: #120a57;
-    text-align: center;
-}
-
-#thirdTab i {
-    padding: 1%;
-    margin: 0%;
-    color: #2B4162;
-    font-size: 40px;
-}
-
-#thirdTab p {
-    display: inline;
-}
-
-#thirdTab .pad {
-    font-size: 30px;
-    color: #758BFD;
-    padding: 1%;
-    margin-right: 8%;
-    margin: 0;
-    border: 2px solid #377771;
-    border-radius: 25%;
-    transition: font-size 4s color 1s;
-}
-
-#thirdTab .pad:hover {
-    font-size: 40px;
-    color: black;
-    padding: 1%;
-    margin: 0;
-}
-
-/* FLIP CARD SECTION */
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-card {
-    height: 150px;
-    width: 30%;
-    margin: 1% 0% 1% 0%;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px;
-    background-color: #49a6e9;
-    border-radius: 10px;
-    /* Remove this if you don't want the 3D effect */
-}
-
-/* picking out anything p inside of flex */
-.flex p {
-    font-size: 14px;
-    text-align: left;
-    padding-top: 0%;
-
-}
-
-.flex h2 {
-    font-size: 20px;
-    text-align: center;
-    padding-bottom: 0%;
-}
-
-.flip-card-back h2 {
-    padding-top: 3% !important;
-
-}
-
-.flex p::first-letter {
-
-    font-size: 15px;
-    font-family: 'Orbitron', sans-serif;
-
-}
-
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-    position: relative;
-    width: 80%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-    left: 0px;
-}
-
-/* Position the front and back side */
-.flip-card-front,
-.flip-card-back {
-    position: absolute;
-    width: 80%;
-    height: 50%;
-    -webkit-backface-visibility: hidden;
-    /* Safari */
-    backface-visibility: hidden;
-    background-color: #222 !important;
-}
-
-.shield {
-    margin-left: 36%;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-    background-color: #bbb;
-    color: black;
-}
-
-/* Style the back side */
-.flip-card-back {
-    background-color: dodgerblue;
-    color: white;
-    transform: rotateY(180deg);
-
-}
-
-.flip:hover {
-    transform: rotate(360deg);
-}
-
-.flip {
-    transform: rotate(0deg);
-    transition: transform 2s;
-    font-size: 50px;
-    text-align: left;
+    color: #120a57
 }
