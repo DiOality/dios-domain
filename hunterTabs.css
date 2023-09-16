@@ -79,6 +79,8 @@ body {
     font-size: 0.875rem;
     /* wont load a scrollbar, keeps the page on 1 dimension */
     /* overflow: hidden; */
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 ul {
@@ -250,7 +252,7 @@ About
 .title {
     text-align: center;
     margin-bottom: 2rem;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Orbiton', sans-serif;
 
     animation: fadeIn;
     /* referring directly to the animation's @keyframe declaration */
@@ -340,8 +342,8 @@ About
     border-bottom-left-radius: var(--radius);
     border-bottom-right-radius: var(--radius);
     padding: 1rem 1.5rem;
-    background-color: #071386;
-    /* #2B4162 | #293241 | #758BFD | #377771 | #5D5F71 | */
+    background-color: #2B4162;
+    /* #2B4162 | #293241 | #758BFD | #377771 | #5D5F71 | #071386 */
 }
 
 /* hide content */
@@ -404,7 +406,7 @@ About
     cursor: pointer;
     background-color: whitesmoke;
     color: #120a57;
-    text-align: center;
+    text-align: left;
 }
 
 #thirdTab i {
@@ -418,22 +420,29 @@ About
     display: inline;
 }
 
+#thirdTab p::first-letter {
+    color: #F2B1CF;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
 #thirdTab .pad {
     font-size: 30px;
     color: #758BFD;
     padding: 1%;
-    margin-right: 8%;
-    margin: 0;
-    border: 2px solid #377771;
-    border-radius: 25%;
+    margin-right: 2%;
+    margin-left: 4%;
+    /* border: 2px solid #377771;
+    border-radius: 25%; */
     transition: font-size 4s color 1s;
 }
 
 #thirdTab .pad:hover {
     font-size: 40px;
-    color: black;
+    color: #2B4162;
     padding: 1%;
-    margin: 0;
+    margin-right: 4%;
+    margin-left: 4%;
 }
 
 /* FLIP CARD SECTION */
@@ -464,7 +473,7 @@ About
 }
 
 .flip-card-back h2 {
-    padding-top: 3% !important;
+    padding-top: 8% !important;
 
 }
 
@@ -530,4 +539,29 @@ About
     transition: transform 2s;
     font-size: 50px;
     text-align: left;
+}
+
+#footer {
+    /* 
+    position: absolute;
+    bottom: 0; */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding-left: 1%;
+
+}
+
+#copyright {
+    color: #758BFD;
+}
+
+#copyright::first-letter {
+    color: #758BFD;
+    text-shadow: none;
+
+}
+
+#footer:hover {
+    font-size: 20px;
 }
