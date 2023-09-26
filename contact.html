@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contact.css">
+   
+    <script>
+        function sendEmail(){
+            Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "mad-shino@hotmail.com",
+    Password : "78A7A74119009AEEB04C1B8956748323B18D",
+    To : 'nathan-dp@hotmail.co.uk',
+    From : document.getElementById("email").value,
+    Subject : "New Contact Form Enquiry",
+    Body : "Name: " + document.getElementById("name").value + "<br> Email: " + document.getElementById("email").value + "<br> Phone Number: " + document.getElementById("phone").value + "<br> Message: " + document.getElementById("message").value
+    }).then(
+     message => alert("Message Sent Succesfully")
+    );
+        }
+    </script>
+</head>
+<body>
+    <div class='container'>
+<form onsubmit="sendEmail(); reset(); return false;">
+    <h3>Get In Touch</h3>
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="text" id="phone" placeholder="Phone Number" required>
+    <textarea id="message" rows="4" placeholder="How can I help you?"></textarea>
+    <button type="submit">Send</button>
+</form>
+    </div>
+    <script defer src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>
