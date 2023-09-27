@@ -114,7 +114,7 @@ h4 {
     line-height: 1.25;
     margin-bottom: 0.75rem;
     font-family: var(--ff-primary);
-    color: #887658;
+    color: #A69D84;
 
 }
 
@@ -150,7 +150,7 @@ header>nav>ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #887658;
+    background-color: #A69D84;
     /* position: fixed; */
     top: 0;
     width: 100%;
@@ -191,7 +191,7 @@ header>nav>ul>li.active {
 
 p {
     margin-bottom: 0.2rem;
-    color: #887658;
+    color: #A69D84;
 }
 
 p::first-letter {

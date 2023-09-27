@@ -89,11 +89,12 @@ ul {
 
 a {
     text-decoration: underline;
-    font-family: var(--ff-secondary);
+    font-family: 'Orbitron', sans-serif;
     color: #120a57;
     line-height: 1.5;
     font-size: 0.875rem;
 }
+
 
 img:not(.logo) {
     width: 100%;
@@ -489,9 +490,15 @@ About
     margin-right: 1px;
     text-decoration: none;
     font-size: xx-large;
-
-
 }
+
+#thirdTab>dl>dt>a:hover {
+    font-family: 'Orbitron', sans-serif;
+    color: #377771;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
 
 /* #thirdTab .pad {
     font-size: 30px;
